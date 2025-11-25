@@ -1,0 +1,8 @@
+// Aula 06 - Tratamento de Dados
+let n1 = Number(prompt('Digite um número: ')) // Inteiro
+let n2 = Number(prompt('Digite outro número: ')) // Inteiro
+let soma = n1 + n2
+
+alert(`A soma entre ${n1} e ${n2} é igual a: ${soma}`)
+// (number + number) para adição
+// (string + string) para concatenação

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PAIS</title>
+  </head>
+  <body>
+    <h1>Nacionalidade</h1>
+    Em qual país você nasceu? <input type="text" name="txtpais" id="txtpais" />
+    <input type="button" value="Verificar" onclick="mostrarNac()" />
+    <div id="nac"></div>
+
+    <script>
+      function mostrarNac() {
+        const txtpais = document.getElementById("txtpais");
+        const nac = document.getElementById("nac");
+        let pais = txtpais.value
+
+        nac.innerHTML = `<p>Vivendo em ${pais}</p>`;
+
+        if (pais == 'Brasil' || pais == 'brasil') {
+          nac.innerHTML += "<p>Você é <strong>Brasileiro!</strong></p>";
+        } else {
+          nac.innerHTML += "<p>Você é <strong>Estrangeiro!</strong></p>";
+        }
+      }
+    </script>
+  </body>
+</html>

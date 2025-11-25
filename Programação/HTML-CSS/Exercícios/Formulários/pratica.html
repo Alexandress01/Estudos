@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de Formulário</title>
+</head>
+<body>
+    <h1>Formulário</h1>
+    <form action="/registro" method="POST">
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="nome" required placeholder="Digite seu nome completo">
+        <br><br>
+
+        <p>Gênero:</p>
+        <input type="radio" name="genero" id="masc" value="masculino">
+        <label for="masc">Masculino</label>
+        <input type="radio" name="genero" id="fem" value="feminino">
+        <label for="fem">Feminino</label>
+        <input type="radio" name="genero" id="outro" value="outro">
+        <label for="outro">Outro</label>
+        <br><br>
+
+
+        <input type="checkbox" name="termos" id="termos" value="aceito">
+        <label for="termos">Aceite os Termos de Uso</label>
+        <br><br>
+
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
