@@ -12,4 +12,35 @@ public class Calculadora {
     public void multiplicaDois(int num1, int num2) {
         System.out.println(num1 * num2);
     }
+
+    public double divideDois(double num1, double num2) {
+        if (num2 == 0) {
+            return 0;
+        }
+        return num1 / num2;
+    }
+
+    public double divideDois02(double num1, double num2) {
+        if (num2 != 0) {
+            return num1 / num2;
+        }
+        return 0;
+    }
+
+    public void imprimeDivisaoDois(double num1, double num2) {
+        if (num2 == 0) {
+            System.out.println("Não existe divisão por zero!");
+            return;
+        }
+        System.out.println(num1 / num2);
+    }
+
+    public void alteraDois(int numero1, int numero2) {
+        numero1 = 99;
+        numero2 = 33;
+
+        System.out.println("Dentro do alteraDois");
+        System.out.println("Num1: " + numero1);
+        System.out.println("Num2: " + numero2);
+    }
 }
