@@ -5,17 +5,23 @@ public class Anime {
     private String genero;
     private int episodios;
     private String estudio;
+    private String base;
 
     public Anime(String nome, String genero, int episodios, String estudio) {
-        System.out.println("Dentro do construtor");
+        this();
         this.nome = nome;
         this.genero = genero;
         this.episodios = episodios;
         this.estudio = estudio;
     }
 
-    public Anime() {
+    public Anime(String nome, String genero, int episodios, String estudio, String base) {
+        this(nome, genero, episodios, estudio);
+        this.base = base;
+    }
 
+    public Anime() {
+        System.out.println("Dentro do construtor sem argumentos");
     }
 
     public void imprime() {
@@ -23,6 +29,7 @@ public class Anime {
         System.out.println(this.genero);
         System.out.println(this.episodios);
         System.out.println(this.estudio);
+        System.out.println(this.base);
     }
 
     public void setNome(String nome) {
