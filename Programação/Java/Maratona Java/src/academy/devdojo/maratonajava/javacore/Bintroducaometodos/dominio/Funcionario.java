@@ -1,9 +1,11 @@
 package academy.devdojo.maratonajava.javacore.Bintroducaometodos.dominio;
 
 public class Funcionario {
-    public String nome;
-    public int idade;
-    public float[] salarios;
+    private String nome;
+    private int idade;
+    private float[] salarios;
+    private float media;
+
 
     public void imprimeDados() {
         if (salarios == null) {
@@ -24,13 +26,43 @@ public class Funcionario {
         if (salarios == null) {
             return;
         }
-        float mediaSalarios = 0;
+
         for (float salario : salarios) {
-            mediaSalarios += salario;
+            media += salario;
         }
 
-        mediaSalarios /= salarios.length;
+        media /= salarios.length;
 
-        System.out.println("\nA média salarial é: " + mediaSalarios);
+        System.out.println("\nA média salarial é: " + media);
+    }
+
+    // Setters
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public void setIdade(int idade) {
+        this.idade = idade;
+    }
+
+    public void setSalarios(float[] salarios) {
+        this.salarios = salarios;
+    }
+
+    // Getters
+    public String getNome() {
+        return nome;
+    }
+
+    public int getIdade() {
+        return idade;
+    }
+
+    public float[] getSalarios() {
+        return salarios;
+    }
+
+    public float getMedia() {
+        return media;
     }
 }
