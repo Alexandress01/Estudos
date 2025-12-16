@@ -9,10 +9,10 @@ CREATE DATABASE cadastro;
 USE cadastro;
 
 CREATE TABLE pessoas (
-    nome VARCHAR(100),
+    nome VARCHAR(30),
     idade INT(3),
     sexo CHAR(1),
     altura FLOAT,
     peso FLOAT,
-    nacionalidade VARCHAR(30)
+    nacionalidade VARCHAR(20)
 );
