@@ -1,4 +1,4 @@
--- Aula 01: Criando o primeiro banco de dados
+-- Aula 01: Criando o Primeiro Banco de Dados
 -- Aprendi:
 -- - Como criar um banco de dados
 -- - Como selecionar um banco com USE
