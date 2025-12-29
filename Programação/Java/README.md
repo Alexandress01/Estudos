@@ -4,14 +4,15 @@ Estudos da linguagem Java com foco em:
 - Orientação a Objetos
 - Boas práticas
 - Estruturação de código
-- Base para aplicações back-end
+- Base para aplicações Back-End
 
 ## Conteúdos estudados (em constante evolução)
 - Fundamentos
-- Classes e objetos
+- Classes e Objetos
 - Encapsulamento
-- Herança e polimorfismo
-- Classes abstratas e interfaces
+- Herança e Polimorfismo
+- Classes Abstratas e Interfaces
+- Classes Utilitárias
 - Collections
 - Exceptions
 
