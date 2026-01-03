@@ -1,13 +1,12 @@
 # Removendo elementos: crie uma lista e remova um item informado pelo usuário
-lista = ['abóbora', 12, True, 'cacete']
+lista = ['abacaxi', 'banana', 'laranja', 'uva', 'manga']
 
-print("Lista atual:", lista)
-print("Qual item deseja remover?")
-item = input("Digite o item: ")
-if item.isdigit():
-    item = int(item)
-if item in lista:
-    lista.remove(item)
-    print(f"Item '{item}' removido. Lista atualizada: {lista}")
+item_remover = input("Digite o nome da fruta que deseja remover da lista: ")
+
+if item_remover in lista:
+    lista.remove(item_remover)
+    print(f"{item_remover} foi removido da lista.")
 else:
-    print(f"Item '{item}' não encontrado na lista. Lista permanece: {lista}")
+    print(f"{item_remover} não está na lista.")
+
+print("Lista atualizada:", lista)
