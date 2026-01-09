@@ -1,6 +1,6 @@
 package academy.devdojo.maratonajava.exercicios.excecoes.multicatchinline.test;
 
-public class MultiCatchEmLinha {
+public class MultiCatchEmLinhaTest {
     public static void main(String[] args) {
         try {
             int[] numeros = {1, 2, 3};
