@@ -3,18 +3,18 @@ package academy.devdojo.maratonajava.exercicios.regex.test;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class PalavraCincoADez {
+public class ValidarSenhaTest {
     public static void main(String[] args) {
-        String palavra = "Cavalo";
-        String regex = "^[A-Za-z]{5,10}$";
+        String senha = "1suasenha1";
+        String regex = "^(?=.*\\d).{8,}$";
 
         Pattern pattern = Pattern.compile(regex);
-        Matcher matcher = pattern.matcher(palavra);
+        Matcher matcher = pattern.matcher(senha);
 
         if (matcher.matches()) {
-            System.out.println("✔ Palavra válida");
+            System.out.println("✔ Senha válida");
         } else {
-            System.out.println("❌ Palavra inválida");
+            System.out.println("❌ Senha inválida");
         }
     }
 }

@@ -3,7 +3,7 @@ package academy.devdojo.maratonajava.exercicios.regex.test;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class ValidarEmail {
+public class ValidarEmailTest {
     public static void main(String[] args) {
         String email = "alekidevsupremo@gmail.com";
         String regex = "^[\\w._+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}$";

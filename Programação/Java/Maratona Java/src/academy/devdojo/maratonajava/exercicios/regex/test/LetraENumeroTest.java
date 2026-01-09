@@ -3,21 +3,18 @@ package academy.devdojo.maratonajava.exercicios.regex.test;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class SoNumeros {
+public class LetraENumeroTest {
     public static void main(String[] args) {
-        String texto = "2140583394";
-        String regex = "^\\d+$";
+        String texto = "abAcax!1";
+        String regex = "^[A-Za-z].*\\d$";
 
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(texto);
 
-        System.out.println("Texto: " + texto);
-        System.out.println("Regex: " + regex);
-
         if (matcher.matches()) {
-            System.out.println("✔ Contém apenas números");
+            System.out.println("✔ Texto válido");
         } else {
-            System.out.println("❌ Não contém apenas números");
+            System.out.println("❌ Texto inválido");
         }
     }
 }

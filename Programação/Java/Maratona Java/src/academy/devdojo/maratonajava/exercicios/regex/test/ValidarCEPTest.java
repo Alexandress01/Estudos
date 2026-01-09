@@ -3,18 +3,18 @@ package academy.devdojo.maratonajava.exercicios.regex.test;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class ValidarSenha {
+public class ValidarCEPTest {
     public static void main(String[] args) {
-        String senha = "1suasenha1";
-        String regex = "^(?=.*\\d).{8,}$";
+        String texto = "42711-123";
+        String regex = "^\\d{5}-?\\d{3}$";
 
         Pattern pattern = Pattern.compile(regex);
-        Matcher matcher = pattern.matcher(senha);
+        Matcher matcher = pattern.matcher(texto);
 
         if (matcher.matches()) {
-            System.out.println("✔ Senha válida");
+            System.out.println("✔ CEP válido");
         } else {
-            System.out.println("❌ Senha inválida");
+            System.out.println("❌ CEP inválido");
         }
     }
 }

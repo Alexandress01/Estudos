@@ -3,7 +3,7 @@ package academy.devdojo.maratonajava.exercicios.regex.test;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class ExtrairHashtags {
+public class ExtrairHashtagsTest {
     public static void main(String[] args) {
         String texto = "Aprendendo #Java e #Regex no #DevDojo";
         String regex = "#[A-Za-z]+(?=\\s|$)";
