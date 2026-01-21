@@ -26,12 +26,29 @@ public class Manga implements Comparable<Manga> {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Manga manga = (Manga) o;
-        return Double.compare(preco, manga.preco) == 0 && Objects.equals(id, manga.id) && Objects.equals(nome, manga.nome);
+        return Objects.equals(id, manga.id) && Objects.equals(nome, manga.nome);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, nome, preco);
+        return Objects.hash(id, nome);
+    }
+
+    @Override
+    public int compareTo(Manga outroManga) {
+        // negativo se this < outroManga
+        // se this == outroManga, return 0
+        // positivo se this > outroManga
+//        if (this.id < outroManga.getId()) {
+//            return -1;
+//        } else if (this.id.equals(outroManga.getId())) {
+//            return 0;
+//        } else {
+//            return 1;
+//        }
+        return this.nome.compareTo(outroManga.getNome());
+//        return Double.compare(preco, outroManga.getPreco());
+//        return this.id.compareTo(outroManga.getId());
     }
 
     @Override
@@ -74,22 +91,5 @@ public class Manga implements Comparable<Manga> {
 
     public void setQuantidade(int quantidade) {
         this.quantidade = quantidade;
-    }
-
-    @Override
-    public int compareTo(Manga outroManga) {
-        // negativo se this < outroManga
-        // se this == outroManga, return 0
-        // positivo se this > outroManga
-//        if (this.id < outroManga.getId()) {
-//            return -1;
-//        } else if (this.id.equals(outroManga.getId())) {
-//            return 0;
-//        } else {
-//            return 1;
-//        }
-        return this.nome.compareTo(outroManga.getNome());
-//        return Double.compare(preco, outroManga.getPreco());
-//        return this.id.compareTo(outroManga.getId());
     }
 }
