@@ -1,6 +1,6 @@
-package academy.devdojo.maratonajava.exercicios.colecoes.setehashset.test;
+package academy.devdojo.maratonajava.exercicios.colecoes.test;
 
-import academy.devdojo.maratonajava.exercicios.colecoes.setehashset.dominio.Pessoa;
+import academy.devdojo.maratonajava.exercicios.colecoes.dominio.Pessoa;
 
 import java.util.HashSet;
 import java.util.Set;

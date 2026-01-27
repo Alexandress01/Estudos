@@ -1,4 +1,4 @@
-package academy.devdojo.maratonajava.exercicios.colecoes.setehashset.dominio;
+package academy.devdojo.maratonajava.exercicios.colecoes.dominio;
 
 import java.util.Objects;
 

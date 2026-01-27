@@ -1,6 +1,6 @@
-package academy.devdojo.maratonajava.exercicios.colecoes.setehashset.test;
+package academy.devdojo.maratonajava.exercicios.colecoes.test;
 
-import academy.devdojo.maratonajava.exercicios.colecoes.setehashset.dominio.Pessoa;
+import academy.devdojo.maratonajava.exercicios.colecoes.dominio.Pessoa;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -9,8 +9,8 @@ import java.util.List;
 
 class PessoaPorIdadeComparator implements Comparator<Pessoa> {
     @Override
-    public int compare(Pessoa pessoa1, Pessoa pessoa2) {
-        return Integer.compare(pessoa1.getIdade(), pessoa2.getIdade());
+    public int compare(Pessoa p1, Pessoa p2) {
+        return Integer.compare(p2.getIdade(), p1.getIdade());
     }
 }
 
@@ -20,7 +20,7 @@ public class PessoaSortListTest {
         pessoas.add(new Pessoa("Lutero", "444.333.222-11", 33));
         pessoas.add(new Pessoa("Bullinger", "111.222.333-44", 27));
         pessoas.add(new Pessoa("Calvino", "555.444.333-22", 23));
-        pessoas.add(new Pessoa("Zuínglio", "111.222.333-44", 35));
+        pessoas.add(new Pessoa("Zuínglio", "122.233.344-45", 35));
 
         Collections.sort(pessoas);
         for (Pessoa pessoa : pessoas) {
