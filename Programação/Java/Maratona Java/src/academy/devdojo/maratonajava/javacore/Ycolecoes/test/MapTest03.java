@@ -21,6 +21,7 @@ public class MapTest03 {
 
         List<Manga> mangaConsumidor1List = List.of(manga1, manga2, manga3);
         List<Manga> mangaConsumidor2List = List.of(manga3, manga4);
+
         Map<Consumidor, List<Manga>> consumidorMangaMap = new LinkedHashMap<>();
 
         consumidorMangaMap.put(consumidor1, mangaConsumidor1List);
