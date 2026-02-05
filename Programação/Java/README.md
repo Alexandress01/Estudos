@@ -15,6 +15,7 @@ Estudos da linguagem Java com foco em:
 - Classes Utilitárias
 - Collections
 - Exceptions
+- Lambdas
 
 ## Observação
 Os arquivos aqui refletem aulas, exercícios e testes práticos feitos durante o estudo.
